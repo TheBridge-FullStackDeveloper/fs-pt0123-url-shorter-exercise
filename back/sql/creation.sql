@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS links (
     origin_url TEXT NOT NULL,
     uses_by_creator INTEGER DEFAULT 0,
     uses INTEGER DEFAULT 0,
-    creation_date TIMESTAMP DEFAULT NOW(),
+    creation_date DATE DEFAULT NOW(),
     created_by uuid REFERENCES users(id)
      ON UPDATE CASCADE ON DELETE CASCADE
 );
