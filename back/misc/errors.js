@@ -25,6 +25,6 @@ module.exports = {
     },
     500: {
         statusCode: 500,
-        error: new Error('something went wrong!'),
+        error: new Error('Woops nos pasó algo raro...!'),
     },
 }
