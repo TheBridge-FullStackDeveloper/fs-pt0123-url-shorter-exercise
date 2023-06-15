@@ -2,13 +2,14 @@
 
     body{
 
-        display: flex;
-        justify-content: center;
+        display         : flex;
+        justify-content : center;
 
     }
 
     .log-title{
-        margin-top: -40px;
+        margin-top  : -40px;
+        text-shadow : 1px 1px 15px black;
     }
 
     .contain-log{
@@ -55,7 +56,9 @@
         box-shadow    : 1px 1px 5px black;
         border-radius : 15px;
         height        : 30px;
+        width         : 95px;
         margin-bottom : 30px;
+        margin-top    : 20px;
     }
 
     a:link, a:visited, a:active {
@@ -69,14 +72,14 @@
 
 
     body{
-        margin-top: 60px;
-        display: flex;
-        justify-content: center;
+        margin-top      : 60px;
+        display         : flex;
+        justify-content : center;
 
     }
 
     .log-title{
-        margin-top: -40px;
+        margin-top   : -40px;
     }
 
     .contain-log{
@@ -116,20 +119,22 @@
     }
 
     label{
-        text-align: left;
+        text-align    : left;
     }
 
     .btn-log{
         box-shadow    : 1px 1px 5px black;
         border-radius : 15px;
         height        : 30px;
+        width         : 110px;
         margin-bottom : 30px;
+        margin-top    : 20px;
     }
 
 
     .register-link:hover{
-        color: white;
-        text-shadow: 1px 1px 10px black;
+        color         : white;
+        text-shadow   : 1px 1px 10px black;
     }
 
     a:link, a:visited, a:active {

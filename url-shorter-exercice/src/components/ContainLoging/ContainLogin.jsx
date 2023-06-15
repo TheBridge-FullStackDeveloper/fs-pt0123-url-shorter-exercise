@@ -22,10 +22,12 @@ const ContainLogin = (  ) => {
 
                 <br />
 
-                <input type="button" className='btn-log' value="Login" />
+                <div className="flexingButton">
+                    <input type="button" className='btn-log' value="Login" />
+                </div>
 
                 <Link href="/register" > <a className='register-link'><p>¿No tienes una cuenta aún? <br /> Registrate aquí.</p></a></Link>
-                {/* <a href="/register" className='register-link'><p>¿No tienes una cuenta aún? <br /> Registrate aquí.</p></a> */}
+    
 
             </section>
           

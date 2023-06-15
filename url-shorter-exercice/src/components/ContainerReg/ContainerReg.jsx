@@ -18,7 +18,7 @@ const ContainerRegister = (  ) => {
                 <br />
 
                 <label htmlFor="username">Username: </label>
-                <input type="text" name="username" className='input-text' placeholder='TuNickName' required/>
+                <input type="text" name="username" className='input-text' placeholder='TuNickname' required/>
                 
                 <br />
                 
@@ -27,10 +27,11 @@ const ContainerRegister = (  ) => {
 
                 <br />
 
-                <input type="button" className='btn-log' value="Create" />
+                <div className="flexinButtom">
+                    <input type="button" className='btn-log' value="Create" />
+                </div>
 
                 <Link href="/home" > <a className='register-link'><p>¿Ya estás registrado? <br /> Inicia Sesión.</p></a></Link>
-              
 
             </section>
           

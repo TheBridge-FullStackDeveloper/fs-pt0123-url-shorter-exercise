@@ -13,7 +13,7 @@ function App() {
 
       <Switch>
 
-        <Route path="/home" component={HomePage} />
+        <Route path="/home"     component={HomePage} />
         <Route path="/register" component={RegisterPage} />
         
         <Redirect to="/home" />
