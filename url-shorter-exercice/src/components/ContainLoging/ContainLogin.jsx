@@ -1,6 +1,8 @@
-import './style.css'
+import './style.css';
 
-const ContainLogin = () => {
+import { Link } from 'wouter';
+
+const ContainLogin = (  ) => {
 
     return( <>
     
@@ -8,7 +10,9 @@ const ContainLogin = () => {
 
             <section className='form-log'>
 
-                <label htmlFor="username">Email: </label>
+                <h2 className='log-title'>Login</h2>
+
+                <label htmlFor="useremail">Email: </label>
                 <input type="email" name="useremail" className='input-text' placeholder='correo@dominio.com' required/>
                 
                 <br />
@@ -20,7 +24,8 @@ const ContainLogin = () => {
 
                 <input type="button" className='btn-log' value="Login" />
 
-                <a href="/" className='register-link'><p>¿No tienes una cuenta aún? <br /> Registrate aquí.</p></a>
+                <Link href="/register" > <a className='register-link'><p>¿No tienes una cuenta aún? <br /> Registrate aquí.</p></a></Link>
+                {/* <a href="/register" className='register-link'><p>¿No tienes una cuenta aún? <br /> Registrate aquí.</p></a> */}
 
             </section>
           

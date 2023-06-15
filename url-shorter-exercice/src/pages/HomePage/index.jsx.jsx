@@ -1,7 +1,5 @@
 import ContainLogin from "../../components/ContainLoging/ContainLogin"
 
-
-
 const HomePage = () => {
     return (
         <>
