@@ -1,18 +1,12 @@
-// module.exports = () => async (req, res, next) => {
-//     const { username } = res.locals
+const errors = require('../../misc/errors')
+const { postShortGenerator } = require('../../models/short')
 
-//     res.status(200).json({
-//         success: true,
-//         data: {
-//             username,
-//         },
-//     })
-// }
-
-module.export = () => async (req, res, next) => {
+module.exports = () => async (req, res, next) => {
     const body = req.body
-
-    const dbRes = await postShortGenerator (await  db , body)()
+    const dbRes = await postShortGenerator (await db , body)()
+    res.status(200).json({
+        success: true,
+    })
 
 
 }
