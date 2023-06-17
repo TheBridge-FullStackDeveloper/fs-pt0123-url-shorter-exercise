@@ -11,3 +11,7 @@ module.exports = {
   },
   credentials: true,
 }
+// est un mécanisme de sécurité intégré aux navigateurs web qui contrôle les requêtes HTTP entre 
+// différents domaines. En définissant ces paramètres, le serveur contrôle quelles requêtes sont autorisées 
+// et lesquelles sont bloquées.
+
