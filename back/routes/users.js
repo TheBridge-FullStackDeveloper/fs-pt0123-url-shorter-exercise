@@ -1,10 +1,11 @@
 const router = require('express').Router()
 const { authorizer } = require('../middlewares')
 
-const usersControllers = require('../controllers/users')
+const controllers = require('../controllers/users')
 
-module.exports = () => {
-    router.get('/', authorizer, usersControllers.getUser())
+module.exports = (db) => {
+    router.get('/', authorizer(), controllers.getUser())
+    router.get('/shorts', authorizer(), controllers.getURLsCreated(db))
 
     return router
 }
