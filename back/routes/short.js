@@ -2,8 +2,10 @@ const router = require ('express').Router()
 const { authorizer } = require ('../middlewares')
 const shortControllers = require ('../controllers/short')
 
-module.exports = () => {
-    router.post('/generator', authorizer, shortControllers.postGenerator())
+
+module.exports = (db) => {
+    router.post('/generator', authorizer, shortControllers.postGenerator(db))
+    router.get('/:id', shortControllers.getShortDynamic(db), )
 
     return router
 }

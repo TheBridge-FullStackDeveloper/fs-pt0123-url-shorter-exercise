@@ -5,7 +5,7 @@ const shortRoutes = require ('./short')
 
 module.exports = (db) => {
     router.use('/auth', authRoutes(db))
-    router.use('/users', usersRoutes())
-    router.use('/short', shortRoutes())
+    router.use('/users', usersRoutes(db))
+    router.use('/short', shortRoutes(db))
     return router
 }
