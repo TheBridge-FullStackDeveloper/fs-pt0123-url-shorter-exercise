@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { login } from './auth';
 import { info }  from './user';
+import { signup } from './registerUser';
 
 const client = axios.create({
     baseURL: import.meta.env.VITE_API_URL,
@@ -15,4 +16,8 @@ const user = {
     info: info( client ),
 }
 
-export { auth, user };
+const register = {
+    signup: signup( client )
+}
+
+export { auth, user, register };

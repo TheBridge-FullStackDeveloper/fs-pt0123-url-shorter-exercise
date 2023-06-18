@@ -8,7 +8,9 @@ export const useLogin = () => {
         mutationFn : auth.login,
         onSuccess: ( response ) =>{
             console.info('=> Mutation Response: ', response);
-            if( response.success ) queryClient.invalidateQueries({ queryKey:['user'] });
+            if( response.success ) {
+                queryClient.invalidateQueries({ queryKey:['user'] })
+            }
         },
     });
 

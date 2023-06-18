@@ -1,22 +1,9 @@
 import './style.css';
-
-import { Link, useLocation } from 'wouter';
+import { login } from '../../misc/templates';
+import { useLogin, useUser } from '../../hooks';
 import { useForm } from 'react-hook-form';
 import { useEffect } from 'react';
-import { useQuery } from 'react-query';
-
-import { user } from '../../services';
-import { login } from '../../misc/templates';
-import { useLogin } from '../../hooks';
-
-const useUser = () => {
-  const { data, isLoading } = useQuery({
-    queryKey: 'user',
-    queryFn: user.info
-});
-
-  return { data, isLoading };
-};
+import { Link, useLocation } from 'wouter';
 
 const ContainLogin = () => {
   const { register, formState, handleSubmit } = useForm();
@@ -29,7 +16,7 @@ const ContainLogin = () => {
 
   useEffect(() => {
     console.info('=> User Data: ', data);
-    if (data) setLocation('/home');
+    if (data) setLocation('/panel');
   }, [data, setLocation]);
 
   return (

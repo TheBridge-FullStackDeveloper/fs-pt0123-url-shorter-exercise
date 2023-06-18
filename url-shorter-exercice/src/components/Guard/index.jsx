@@ -1,13 +1,13 @@
-import { Component } from "react";
+import { useUser } from "../../hooks";
+import { Redirect } from "wouter";
 
 const Guard = ( {component: Component} ) =>{
 
+    const { data, isLoading } = useUser();
 
-    return(
+    if( isLoading ) return <p>Cargando...</p>
 
-        <Component/>
-
-    );
+    return data ? <Component/> : <Redirect to="/home"/> ;
 }
 
 export default Guard;

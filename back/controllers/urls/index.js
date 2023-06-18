@@ -1,4 +1,5 @@
 
 module.exports = {
-    newUrl : require('./newUrl'),
+    newUrl        : require('./newUrl'),
+    updateUrlData : require('./updateUrlData'),
 }
