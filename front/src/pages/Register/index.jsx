@@ -1,24 +1,24 @@
+import { Link } from "wouter";
 import Footer from "../../components/Footer";
 import Form from "../../components/Form";
 import Input from "../../components/Input";
 import Title from "../../components/Title";
 import Styled from "../../styles";
-import { Link } from "wouter";
 
 import { validations } from "../../constants";
+import { useAuth } from "../../hooks/useAuth";
+import { useLogged } from "../../hooks";
 
 const Register = () => {
+  useLogged()
+  const { register } = useAuth();
   const { required } = validations;
-
-  const handleSubmit = (data) => {
-    console.info("> data: ", data);
-  };
 
   return (
     <Styled.Page>
       <Title>Register</Title>
 
-      <Form onSubmit={handleSubmit} button="Create">
+      <Form onSubmit={register} button="Create">
         <Input
           name="email"
           label={true}
