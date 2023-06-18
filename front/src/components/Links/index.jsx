@@ -1,13 +1,14 @@
 import Styled from "./styles";
-import { Link } from "wouter";
 
-const Links = ({ list }) => {
+const Links = ({ list = [] }) => {
   return (
     <Styled.Links>
       {list.map((element, id) => {
         return (
           <Styled.Element key={id}>
-            <Link href={element.link}>{element.link}</Link>
+            <a href={element.url} target="blank">
+              {element.url}
+            </a>
             <Styled.Stats>
               <span>{element.yours} yours</span>{" "}
               <span>{element.overall} overall</span>
