@@ -13,13 +13,14 @@ VALUES (${body.url},${shortUrl})
 // WHERE short_url LIKE ${params}
 // `)
 
-const dynamicShort = (params => (sql.unsafe `
+const dynamicShort = (params)=> (sql.unsafe `
 UPDATE links
 SET uses = uses + 1
 WHERE short_url LIKE ${params}
 RETURNING origin_url ;
 
-`))
+`)
+
 
 
 

@@ -4,7 +4,7 @@ const postShortGenerator = (db) => async (body, short) => {
     try {
  
         const response = await db.query(generatorShort(body,short))
-        console.log(response)
+      
 
         return {
             ok: true,
@@ -24,7 +24,7 @@ const getShortDynamic = (db) => async (params) => {
     try {
  
         const response = await db.query(dynamicShort(params))
-        console.log(response)
+     
 
         return {
             ok: true,
