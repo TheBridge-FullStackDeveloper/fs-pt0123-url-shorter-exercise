@@ -2,8 +2,8 @@ const {getShortDynamic} = require("../../models/short");
 
 module.exports = (db) => async (req, res, next) => {
 
-//  const { username } = res.locals
-//  console.log(username)
+ const { username } = res.locals
+ console.log(username)
   const { id } = req.params;
 
   if (id.length !== 8) {
