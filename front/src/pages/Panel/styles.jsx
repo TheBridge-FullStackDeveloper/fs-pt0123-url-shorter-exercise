@@ -16,6 +16,7 @@ const Generated = styled.section`
   font-size: 20px;
   font-weight: 300;
   margin-top: 0;
+  height: 40px;
 
   a {
     text-decoration: none;
