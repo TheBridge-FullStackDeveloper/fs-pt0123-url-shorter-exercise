@@ -6,9 +6,10 @@ const urlRoutes = require('./urls')
 
 
 module.exports = (db) => {
+
     router.use('/auth', authRoutes(db))
     router.use('/users', usersRoutes())
-    router.use('/short', urlRoutes()) //Recibe el link original
-
+    router.use('/short', urlRoutes(db)) //Recibe el link original
     return router
+
 }

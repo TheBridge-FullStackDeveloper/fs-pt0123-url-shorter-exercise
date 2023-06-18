@@ -4,7 +4,9 @@ const insertUser = (email, username, password) => sql.unsafe`
     INSERT INTO users (
         email, username, password
     ) VALUES (
-        ${email}, ${username}, ${password}
+        ${email}, 
+        ${username}, 
+        ${password}
     );
 `
 
