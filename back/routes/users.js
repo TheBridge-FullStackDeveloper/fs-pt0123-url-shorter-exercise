@@ -1,10 +1,10 @@
-const router = require('express').Router()
-const { authorizer } = require('../middlewares')
+const router = require("express").Router();
+const { authorizer } = require("../middlewares");
 
-const usersControllers = require('../controllers/users')
+const usersControllers = require("../controllers/users");
 
-module.exports = () => {
-    router.get('/', authorizer, usersControllers.getUser())
+module.exports = (db) => {
+  router.get("/", authorizer, usersControllers.getUser(db));
 
-    return router
-}
+  return router;
+};
