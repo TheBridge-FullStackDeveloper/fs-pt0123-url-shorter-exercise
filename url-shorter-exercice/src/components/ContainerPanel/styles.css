@@ -1,0 +1,99 @@
+@media screen, (max-width : 677px ) {
+
+    .containPanel{
+
+        text-align: center;
+        flex-direction   : column;
+        padding          : 15px;
+        background-color : #395E66;
+        border-radius    : 15px;
+        box-shadow       : 1px 1px 10px black;
+        height           : 450px;
+        width            : 320px;
+    
+    
+    }
+
+    .title-panel{
+        color       : white;
+        text-shadow : 1px 1px 8px black;
+    }
+
+    .input-url{
+        height        : 25px;
+        width         : 250px;
+        text-align    : center;
+        border-radius : 10px;
+        box-shadow    : 1px 1px 10px black;
+        margin-top    : 15px;
+    }
+
+    .btn-submit{
+        height        : 25px;
+        width         : 120px;
+        margin-top    : 15px;
+        border-radius : 8px;
+        box-shadow    : 1px 1px 10px black;
+    }
+
+    .info-container{
+        margin-top    : 80px;
+        width         : auto;
+        height        : 185px;
+        border-radius : 10px;
+        box-shadow    : 1px 1px 8px black;
+        padding       : 10px;
+    }
+
+}
+
+@media (min-width : 680px ) {
+
+    .containPanel{
+        display          : flex;
+        justify-content  : center;
+        align-self: center;
+        text-align       : center;
+        flex-direction   : column;
+        padding          : 15px;
+        background-color : #395E66;
+        border-radius    : 15px;
+        box-shadow       : 1px 1px 10px black;
+        height           : 550px;
+        width            : 420px;
+        margin-top       : 75px;
+    }
+
+    .title-panel{
+        color       : white;
+        text-shadow : 1px 1px 8px black;
+    }
+
+    .input-url{
+        height        : 25px;
+        width         : 250px;
+        text-align    : center;
+        border-radius : 10px;
+        box-shadow    : 1px 1px 10px black;
+        margin-top    : 15px;
+    }
+
+    .btn-submit{
+        height        : 25px;
+        width         : 120px;
+        margin-top    : 15px;
+        border-radius : 8px;
+        box-shadow    : 1px 1px 10px black;
+    }
+
+    .info-container{
+        margin-top    : 80px;
+        width         : auto;
+        height        : 290px;
+        border-radius : 10px;
+        box-shadow    : 1px 1px 8px black;
+        padding       : 10px;
+    }
+
+
+}

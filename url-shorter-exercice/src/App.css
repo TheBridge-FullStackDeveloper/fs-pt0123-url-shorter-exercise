@@ -1,0 +1,13 @@
+body{
+
+  margin           : 0px;
+  padding          : 0px;
+  background-color : #ABD1B5;
+
+}
+
+.main-title{
+  color       : white;
+  text-align  : center;
+  text-shadow : 1px 1px 8px black;
+}
