@@ -1,5 +1,5 @@
 const errors = require('../misc/errors')
-const WHITELIST = ["localhost"]
+const WHITELIST = ["localhost", "127.0.0.1"]
 //seul le domaine "localhost" est autorisé. Cela signifie que les requêtes 
 //provenant de ce domaine seront autorisées.
 module.exports = {

@@ -1,9 +1,10 @@
 const login = (client) => async (params) => {
     try {
-        const { data } = await client.post('/auth/signin', params)
-        console.info('> login data: ', data)
+        const { data } = await client.post('/auth/signin', params);
+        console.info('> login data: ', data);
+        return data
     } catch(error) {
-        console.info('> login error: ', error.message)
-
+        console.info('> login error: ', error.message);
+        return { sucess: false };
     }
-}
+};
