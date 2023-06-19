@@ -1,0 +1,32 @@
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+ }
+ 
+ html,
+ body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+ }
+ 
+ body {
+  height: 100vh;
+  height: calc(100 * var(--vh));
+  overflow: auto;
+  touch-action: pan-x pan-y;
+ }
+ 
+ #root {
+  height: 100vh;
+ }
+ 
+ input {
+  margin: 0px;
+ }
+ 
+ a {
+  text-decoration: none;
+ }
+ 

@@ -1,10 +1,12 @@
 module.exports = () => async (req, res, next) => {
-    const { username } = res.locals
+  const { username, id, email } = res.locals;
 
-    res.status(200).json({
-        success: true,
-        data: {
-            username,
-        },
-    })
-}
+  res.status(200).json({
+    success: true,
+    data: {
+      id,
+      email,
+      username,
+    },
+  });
+};
