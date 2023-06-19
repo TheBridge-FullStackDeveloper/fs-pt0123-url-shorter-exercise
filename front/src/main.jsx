@@ -1,7 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Guard from './components/Guard';
+import { Provider } from './context/Provider';
 import { Route, Switch, Redirect, Link, useRoute } from "wouter";
 import Register from "./pages/Register"
+import Panel from "./pages/Panel"
+import Login from "./pages/Login"
 
 
 
@@ -21,14 +25,17 @@ const Container = () => {
     <div>
       <nav>
         <CustomLink href="/register">Register</CustomLink>
-        <CustomLink href="/register">Register</CustomLink>
-        <CustomLink href="/register">Register</CustomLink>
+        <CustomLink href="/Login">Login</CustomLink>
+        <CustomLink href="/Panel">Panel</CustomLink>
       </nav>
-      <Switch>
-       
-        <Route path="/register" component={Register} />
-        <Redirect to="/register" />
-      </Switch>
+      <Provider>
+        <Switch>
+          <Route path="/register" component={Register} />
+          <Route path="/Login" component={Login} />
+          <Route path="/Panel" component={Panel} />
+          <Redirect to="/register" />
+        </Switch>
+      </Provider>
     </div>
   );
 };
