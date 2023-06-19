@@ -4,6 +4,7 @@ module.exports = (...fields) => (req, _, next) => {
     for(let field of fields) {
         if(!req.body[field]) return next(errors[400])
     }
+// Dans le body il y aura email, username and password
 
     const { password } = req.body
     
@@ -11,3 +12,5 @@ module.exports = (...fields) => (req, _, next) => {
 
     next()
 }
+
+// Para validar cualquier tipo de form
