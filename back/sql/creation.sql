@@ -17,4 +17,4 @@ CREATE TABLE IF NOT EXISTS links (
     uses INTEGER DEFAULT 0,
     creation_date DATE DEFAULT CURRENT_DATE,
     created_by uuid REFERENCES users (id) ON UPDATE CASCADE ON DELETE CASCADE
-);
+)

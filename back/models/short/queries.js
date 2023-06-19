@@ -22,8 +22,6 @@ RETURNING origin_url ;
 `)
 
 
-
-
 module.exports = {
     generatorShort,
     dynamicShort
