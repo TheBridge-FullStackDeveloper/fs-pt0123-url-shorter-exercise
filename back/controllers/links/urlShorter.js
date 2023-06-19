@@ -9,10 +9,11 @@ module.exports = (db) => async (req, res, next) => {
     const characters =
       "1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
     let random = "";
+    let url = "/short/";
     for (let i = 0; i < 8; i++) {
       random += characters[Math.floor(Math.random() * characters.length)];
     }
-    return random;
+    return url + random;
   };
 
   const newUrl = await addUrl(await db)(shortUrl(), url, email);
@@ -21,6 +22,8 @@ module.exports = (db) => async (req, res, next) => {
 
   res.status(200).json({
     success: true,
-    data: newUrl.data,
+    data: {
+      url: shortUrl(),
+    },
   });
 };
