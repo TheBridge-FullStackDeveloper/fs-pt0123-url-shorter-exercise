@@ -11,6 +11,10 @@ module.exports = {
         statusCode: 400,
         error: new Error('password length must be at least 4'),
     },
+    URL_data: {
+        statusCode: 400,
+        error: new Error(' URL no está bien formada'),
+    },
     401: {
         statusCode: 401,
         error: new Error('unauthorized'),
