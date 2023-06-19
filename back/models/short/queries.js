@@ -7,14 +7,7 @@ const generatorShort = (body, shortUrl) => {
   `
 }
 
-const dynamicShort = (params) => {
-  return sql`
-    UPDATE links
-    SET uses = uses + 1 , uses_by_creator = uses_by_creator +1
-    WHERE short_url LIKE ${params}
-    RETURNING origin_url ;
-  `
-}
+
 
 module.exports = {
     generatorShort,
