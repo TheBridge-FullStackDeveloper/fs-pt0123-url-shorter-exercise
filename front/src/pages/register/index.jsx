@@ -28,24 +28,24 @@ function Register() {
         <Styled.Form>
           <form onSubmit={handleSubmit(handleForm)}>
             <Styled.Field>
-                <label htmlFor="">
+                <label htmlFor="email">
                   email
                 </label>
-                  <input type="text" name="email" placeholder="example@example.com" {...register("email", { required: true })} />
+                  <input type="text" id="email" placeholder="example@example.com" {...register("email", { required: true })} />
                   <p>{formState.errors && errors[formState.errors?.email?.type]}</p>
             </Styled.Field>
             <Styled.Field>
-                <label htmlFor="">
+                <label htmlFor="username">
                   username
                 </label>
-                  <input type="text" name="username" placeholder="Username" {...register("username", { required: true })} />
+                  <input type="text" id="username" placeholder="Username" {...register("username", { required: true })} />
                   <p>{formState.errors && errors[formState.errors?.username?.type]}</p>
             </Styled.Field>
             <Styled.Field>
-                <label htmlFor="">
+                <label htmlFor="password">
                   password
                 </label>
-                  <input type="password" name="passord" placeholder="insert a valid password" {...register("password", { required: true, minLength: 4 })}/>
+                  <input type="password" id="password" placeholder="insert a valid password" {...register("password", { required: true, minLength: 4 })}/>
                   <p>{formState.errors && errors[formState.errors?.password?.type]}</p>
             </Styled.Field>
 
