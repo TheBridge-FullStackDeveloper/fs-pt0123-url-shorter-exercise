@@ -118,3 +118,4 @@ Cuando el usuario pegue una URL, comprueba que al menos contenga "http://" o "ht
 
 Cuando te llegue una URL para generar una nueva URL corta, valida que la URL recibida llegue a algún sitio, para eso intenta obtener un statusCode de 200 haciendo una petición a dicha URL.
 Si no obtienes un código 2XX, devuelve un error
+

@@ -20,10 +20,10 @@ function App() {
 
           <Route path="/home"     component={HomePage} />  
           <Route path="/register" component={RegisterPage} />
-          <Route path ='/panel'>
+          {/* <Route path ='/panel'>
             <Guard component={PanelPage}/>
-          </Route>
-          {/* <Route path="/panel" component={PanelPage} /> */}
+          </Route> */}
+          <Route path="/panel" component={PanelPage} />
           
           <Redirect to="/home" />
 
